@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{838383E2-D0B9-4CFE-AD78-0B26CC863FA2}</ProjectGuid>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>ucl</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <CLRSupport>false</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="alloc.c" />
+    <ClCompile Include="n2b_99.c" />
+    <ClCompile Include="n2b_d.c" />
+    <ClCompile Include="n2b_ds.c" />
+    <ClCompile Include="n2b_to.c" />
+    <ClCompile Include="n2d_99.c" />
+    <ClCompile Include="n2d_d.c" />
+    <ClCompile Include="n2d_ds.c" />
+    <ClCompile Include="n2d_to.c" />
+    <ClCompile Include="n2e_99.c" />
+    <ClCompile Include="n2e_d.c" />
+    <ClCompile Include="n2e_ds.c" />
+    <ClCompile Include="n2e_to.c" />
+    <ClCompile Include="ucl_crc.c" />
+    <ClCompile Include="ucl_init.c" />
+    <ClCompile Include="ucl_ptr.c" />
+    <ClCompile Include="ucl_str.c" />
+    <ClCompile Include="ucl_util.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="asm\asminit.def" />
+    <MASM Include="asm\cpuid.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\crcs_asm.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\crc_asm.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2b_d_f1.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2b_d_f2.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2b_d_f3.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2b_d_f4.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2b_d_f5.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2b_d_f6.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2b_d_n1.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2b_d_n2.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2b_d_n3.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2b_d_n4.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2b_d_n5.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2b_d_n6.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2b_d_s1.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2b_d_s2.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2b_d_s3.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2b_d_s4.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2b_d_s5.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2b_d_s6.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2d_d_f1.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2d_d_f2.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2d_d_f3.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2d_d_f4.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2d_d_f5.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2d_d_f6.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2d_d_n1.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2d_d_n2.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2d_d_n3.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2d_d_n4.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2d_d_n5.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2d_d_n6.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2d_d_s1.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2d_d_s2.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2d_d_s3.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2d_d_s4.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2d_d_s5.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2d_d_s6.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2e_d_f1.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2e_d_f2.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2e_d_f3.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2e_d_f4.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2e_d_f5.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2e_d_f6.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2e_d_n1.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2e_d_n2.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2e_d_n3.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2e_d_n4.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2e_d_n5.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2e_d_n6.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2e_d_s1.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2e_d_s2.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2e_d_s3.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2e_d_s4.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2e_d_s5.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\n2e_d_s6.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\rdtsc.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="asm\rdtsca.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <None Include="n2_99.ch" />
+    <None Include="ucl_dll.ch" />
+    <None Include="ucl_mchw.ch" />
+    <None Include="ucl_swd.ch" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="getbit.h" />
+    <ClInclude Include="ucl_conf.h" />
+    <ClInclude Include="ucl_ptr.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

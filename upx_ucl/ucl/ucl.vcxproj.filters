@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="原始程式檔">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="標頭檔">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="資源檔">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="原始程式檔\asm">
+      <UniqueIdentifier>{205bbabf-7193-414e-99b1-c2af2de74e6f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="alloc.c">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="n2b_99.c">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="n2b_d.c">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="n2b_ds.c">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="n2b_to.c">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="n2d_99.c">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="n2d_d.c">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="n2d_ds.c">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="n2d_to.c">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="n2e_99.c">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="n2e_d.c">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="n2e_ds.c">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="n2e_to.c">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="ucl_crc.c">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="ucl_init.c">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="ucl_ptr.c">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="ucl_str.c">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="ucl_util.c">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="n2_99.ch">
+      <Filter>標頭檔</Filter>
+    </None>
+    <None Include="ucl_dll.ch">
+      <Filter>標頭檔</Filter>
+    </None>
+    <None Include="ucl_mchw.ch">
+      <Filter>標頭檔</Filter>
+    </None>
+    <None Include="ucl_swd.ch">
+      <Filter>標頭檔</Filter>
+    </None>
+    <None Include="asm\asminit.def">
+      <Filter>原始程式檔\asm</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="getbit.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="ucl_conf.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="ucl_ptr.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="asm\cpuid.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\crc_asm.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\crcs_asm.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2b_d_f1.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2b_d_f2.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2b_d_f3.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2b_d_f4.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2b_d_f5.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2b_d_f6.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2b_d_n1.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2b_d_n2.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2b_d_n3.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2b_d_n4.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2b_d_n5.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2b_d_n6.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2b_d_s1.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2b_d_s2.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2b_d_s3.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2b_d_s4.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2b_d_s5.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2b_d_s6.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2d_d_f1.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2d_d_f2.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2d_d_f3.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2d_d_f4.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2d_d_f5.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2d_d_f6.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2d_d_n1.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2d_d_n2.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2d_d_n3.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2d_d_n4.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2d_d_n5.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2d_d_n6.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2d_d_s1.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2d_d_s2.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2d_d_s3.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2d_d_s4.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2d_d_s5.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2d_d_s6.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2e_d_f1.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2e_d_f2.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2e_d_f3.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2e_d_f4.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2e_d_f5.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2e_d_f6.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2e_d_n1.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2e_d_n2.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2e_d_n3.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2e_d_n4.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2e_d_n5.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2e_d_n6.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2e_d_s1.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2e_d_s2.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2e_d_s3.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2e_d_s4.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2e_d_s5.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\n2e_d_s6.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\rdtsc.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+    <MASM Include="asm\rdtsca.asm">
+      <Filter>原始程式檔\asm</Filter>
+    </MASM>
+  </ItemGroup>
+</Project>
