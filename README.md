@@ -10,3 +10,5 @@ upx_win32 project : only capable to compress win32 program, with upx.exe smaller
 
 
 ucl : You know it, upx use this library for pe compress algorithm
+
+zlib : upx dependency :)
