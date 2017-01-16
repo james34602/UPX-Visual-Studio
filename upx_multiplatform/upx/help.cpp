@@ -193,13 +193,6 @@ void show_help(int verbose)
     if (verbose > 0)
     {
         fg = con_fg(f,FG_YELLOW);
-        con_fprintf(f,"\nCompression tuning options:\n");
-        fg = con_fg(f,fg);
-        con_fprintf(f,
-                    "  --brute             try all available compression methods & filters [slow]\n"
-                    "  --ultra-brute       try even more compression variants [very slow]\n"
-                    "\n");
-        fg = con_fg(f,FG_YELLOW);
         con_fprintf(f,"Backup options:\n");
         fg = con_fg(f,fg);
         con_fprintf(f,

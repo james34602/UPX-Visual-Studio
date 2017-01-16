@@ -428,13 +428,6 @@
 #  if (_MSC_VER < 600)
 #    undef HAVE_STRFTIME
 #  endif
-#  if (_MSC_VER < 700)
-#    undef HAVE_SNPRINTF
-#    undef HAVE_VSNPRINTF
-#  else
-#    define snprintf _snprintf
-#    define vsnprintf _vsnprintf
-#  endif
 #  if ((_MSC_VER < 800) && ACC_OS_WIN16)
 #    undef HAVE_ALLOCA
 #  endif

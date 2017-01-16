@@ -609,17 +609,6 @@ static int do_option(int optc, const char *arg)
             e_method(opt->method, optc);
         break;
 
-    case 902:                               // --ultra-brute
-        opt->ultra_brute = true;
-        /* fallthrough */
-    case 901:                               // --brute
-        opt->all_methods = true;
-        opt->all_methods_use_lzma = true;
-        opt->method = -1;
-        opt->all_filters = true;
-        opt->filter = -1;
-        opt->crp.crp_ucl.m_size = 999999;
-        /* fallthrough */
     case 900:                               // --best
         if (!set_method(-1, 10))
             e_method(opt->method, 10);
@@ -923,8 +912,6 @@ static const struct mfx_option longopts[] =
 {
     // commands
     {"best",             0x10, 0, 900},     // compress best
-    {"brute",            0x10, 0, 901},     // compress best, brute force
-    {"ultra-brute",      0x10, 0, 902},     // compress best, brute force
     {"decompress",          0, 0, 'd'},     // decompress
     {"fast",             0x10, 0, '1'},     // compress faster
     {"fileinfo",         0x10, 0, 909},     // display info about file
@@ -1104,8 +1091,6 @@ static const struct mfx_option longopts[] =
 {
     // commands
     {"best",             0x10, 0, 900},     // compress best
-    {"brute",            0x10, 0, 901},     // compress best, brute force
-    {"ultra-brute",      0x10, 0, 902},     // compress best, brute force
     {"fast",             0x10, 0, '1'},     // compress faster
 
     // options

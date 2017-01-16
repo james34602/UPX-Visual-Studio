@@ -4,6 +4,7 @@
 int main(int argc, char *argv[]){
 	if (argc < 2){
 		printf("Usage: UPXEnc.exe <file>\n");
+		return 0;
 	}
 	else{
 		FILE *fFile = fopen(argv[1], "rb");
@@ -62,6 +63,4 @@ int main(int argc, char *argv[]){
 			return 0;
 		}
 	}
-
-	getchar();
 }

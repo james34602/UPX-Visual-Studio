@@ -167,16 +167,8 @@ typedef acc_uintptr_t   upx_uintptr_t;
 #  undef __unix__
 #  undef __unix
 #endif
-
-#if !defined(WITH_UCL)
-#  define WITH_UCL 1
-#endif
-#if 0 && !defined(WITH_LZMA)
-#  define WITH_LZMA 1
-#endif
-#if 1 && (ACC_CC_WATCOMC)
-#  undef WITH_LZMA
-#endif
+# define WITH_UCL 1
+#undef WITH_LZMA
 #if defined(UPX_OFFICIAL_BUILD)
 #  if !(WITH_LZMA) || !(WITH_NRV) || !(WITH_UCL)
 #    error
@@ -656,7 +648,7 @@ struct upx_compress_config_t
     lzma_compress_config_t  conf_lzma;
     ucl_compress_config_t   conf_ucl;
     zlib_compress_config_t  conf_zlib;
-    void reset() { conf_lzma.reset(); conf_ucl.reset(); conf_zlib.reset(); }
+    void reset() { conf_ucl.reset(); conf_zlib.reset(); }
 };
 
 #define NULL_cconf  ((upx_compress_config_t *) NULL)

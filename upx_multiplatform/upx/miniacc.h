@@ -3023,21 +3023,6 @@ ACC_COMPILE_TIME_ASSERT_HEADER(sizeof(acc_int_fast64_t) == sizeof(acc_uint_fast6
 #  if (_MSC_VER < 600)
 #    undef HAVE_STRFTIME
 #  endif
-#  if (_MSC_VER < 700)
-#    undef HAVE_SNPRINTF
-#    undef HAVE_VSNPRINTF
-#  elif (_MSC_VER < 1500)
-#    ifndef snprintf
-#    define snprintf _snprintf
-#    endif
-#    ifndef vsnprintf
-#    define vsnprintf _vsnprintf
-#    endif
-#  else
-#    ifndef snprintf
-#    define snprintf _snprintf
-#    endif
-#  endif
 #  if ((_MSC_VER < 800) && ACC_OS_WIN16)
 #    undef HAVE_ALLOCA
 #  endif
@@ -7052,20 +7037,6 @@ ACCLIB_PUBLIC_NOINLINE(unsigned, acc_debug_running_on_valgrind) (void)
 #define __ACCLIB_WILDARGV_CH_INCLUDED 1
 #if !defined(ACCLIB_PUBLIC)
 #  define ACCLIB_PUBLIC(r,f)    r __ACCLIB_FUNCNAME(f)
-#endif
-#if (ACC_OS_DOS16 || ACC_OS_OS216 || ACC_OS_WIN16)
-#if 0 && (ACC_CC_MSC)
-ACC_EXTERN_C int __acc_cdecl __setargv(void);
-ACC_EXTERN_C int __acc_cdecl _setargv(void);
-ACC_EXTERN_C int __acc_cdecl _setargv(void) { return __setargv(); }
-#endif
-#endif
-#if (ACC_OS_WIN32 || ACC_OS_WIN64)
-#if (ACC_CC_INTELC || ACC_CC_MSC)
-ACC_EXTERN_C int __acc_cdecl __setargv(void);
-ACC_EXTERN_C int __acc_cdecl _setargv(void);
-ACC_EXTERN_C int __acc_cdecl _setargv(void) { return __setargv(); }
-#endif
 #endif
 #if (ACC_OS_EMX)
 #define __ACCLIB_HAVE_ACC_WILDARGV 1
