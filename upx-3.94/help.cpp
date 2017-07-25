@@ -37,7 +37,7 @@
 **************************************************************************/
 
 static bool head_done = 0;
-
+#define BUILD_DATE __DATE__
 #if defined(UPX_VERSION_GITREV)
 const char gitrev[] = UPX_VERSION_GITREV;
 #else
@@ -63,7 +63,7 @@ void show_head(void)
 #else
                 "UPX %-11s"
 #endif
-                " Markus Oberhumer, Laszlo Molnar & John Reiser  %14s\n\n",
+                " Markus Oberhumer, Laszlo Molnar & John Reiser  %14s\nBuilt with Visual Studio 2015 compiled by James34602   Build date:" BUILD_DATE "\n\n",
 #if defined(UPX_VERSION_GITREV)
                 gitrev,
                 (sizeof(gitrev)-1 > 6 && gitrev[sizeof(gitrev)-2] == '+') ? '+' : ' ',
@@ -323,8 +323,7 @@ void show_help(int verbose)
         con_fprintf(f,"\nType '%s --help' for more detailed help.\n", progname);
     }
 
-    con_fprintf(f,"\nUPX comes with ABSOLUTELY NO WARRANTY; for details visit https://upx.github.io\n"
-//                "\nUPX comes with ABSOLUTELY NO WARRANTY; for details type 'upx -L'.\n"
+    con_fprintf(f,"\nUPX comes with ABSOLUTELY NO WARRANTY; for details visit https://upx.github.io or type 'upx -L'\n"
                 "");
 
 #if (DEBUG) || (TESTING)
@@ -370,6 +369,7 @@ void show_license(void)
     );
     int fg = con_fg(f,FG_CYAN);
     con_fprintf(f,
+		"        https://github.com/james34602/UPX-Visual-Studio\n"
         "        http://upx.sourceforge.net\n"
         "        http://www.oberhumer.com/opensource/upx/\n"
     );
