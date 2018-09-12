@@ -35,9 +35,10 @@ ELSE
 
 .386p
 .model flat
-.code
 
 ENDIF
+
+.code
 
 ifdef __MASM__
 option casemap:none
