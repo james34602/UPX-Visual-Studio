@@ -25,9 +25,19 @@
 ;  http://www.oberhumer.com/opensource/ucl/
 ;
 
-; this is unsupported in x64 configuration and not really useful for x86
-; .386p
-; .model flat
+IFDEF RAX
+
+; x64 variant
+
+ELSE
+
+; x86 variant
+
+.386p
+.model flat
+
+ENDIF
+
 .code
 
 ifdef __MASM__
