@@ -35,6 +35,11 @@
 #  define _FILE_OFFSET_BITS 64
 #endif
 #undef NDEBUG
+#define UPXPEHEADER0 "UPX0"
+#define UPXPEHEADER1 "UPX1"
+#define UPXPEHEADER2 "UPX2"
+#define UPXPEHEADER3 "UPX3"
+#define UPXPEHEADER4 "UPX4"
 
 
 /*************************************************************************

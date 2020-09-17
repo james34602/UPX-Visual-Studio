@@ -14,7 +14,7 @@
     <ProjectGuid>{FD0F78AE-5489-43B9-9A90-41917235B095}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>upx395</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
     <ProjectName>upx</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />

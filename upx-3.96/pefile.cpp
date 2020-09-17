@@ -2484,8 +2484,8 @@ void PeFile::pack0(OutputFile *fo, ht &ih, ht &oh,
     const unsigned ncsize_virt_increase = (ncsize & oam1) == 0 ? 8 : 0;
 
     // fill the sections
-    strcpy(osection[0].name,"UPX0");
-    strcpy(osection[1].name,"UPX1");
+    strcpy(osection[0].name, UPXPEHEADER0);
+    strcpy(osection[1].name, UPXPEHEADER1);
     // after some windoze debugging I found that the name of the sections
     // DOES matter :( .rsrc is used by oleaut32.dll (TYPELIBS)
     // and because of this lame dll, the resource stuff must be the
@@ -2494,7 +2494,7 @@ void PeFile::pack0(OutputFile *fo, ht &ih, ht &oh,
     // ... even worse: exploder.exe in NiceTry also depends on this to
     // locate version info
 
-    strcpy(osection[2].name, !last_section_rsrc_only && soresources ? ".rsrc" : "UPX2");
+    strcpy(osection[2].name, !last_section_rsrc_only && soresources ? ".rsrc" : UPXPEHEADER2);
 
     osection[0].vaddr = rvamin;
     osection[1].vaddr = s1addr;

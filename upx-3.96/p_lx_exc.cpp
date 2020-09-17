@@ -409,9 +409,9 @@ PackLinuxI386::buildLoader(Filter const *ft)
     // note: we only can use /proc/<pid>/fd when exetype > 0.
     //   also, we sleep much longer when compressing a script.
     checkPatch(NULL, 0, 0, 0);  // reset
-    patch_le32(buf,sz_fold,"UPX4",exetype > 0 ? 3 : 15);   // sleep time
-    patch_le32(buf,sz_fold,"UPX3",progid);
-    patch_le32(buf,sz_fold,"UPX2",exetype > 0 ? 0 : 0x7fffffff);
+    patch_le32(buf,sz_fold, UPXPEHEADER4,exetype > 0 ? 3 : 15);   // sleep time
+    patch_le32(buf,sz_fold, UPXPEHEADER3,progid);
+    patch_le32(buf,sz_fold, UPXPEHEADER2,exetype > 0 ? 0 : 0x7fffffff);
 
     buildLinuxLoader(
         stub_i386_linux_elf_execve_entry, sizeof(stub_i386_linux_elf_execve_entry),
@@ -429,9 +429,9 @@ PackBSDI386::buildLoader(Filter const *ft)
     // note: we only can use /proc/<pid>/fd when exetype > 0.
     //   also, we sleep much longer when compressing a script.
     checkPatch(NULL, 0, 0, 0);  // reset
-    patch_le32(buf,sz_fold,"UPX4",exetype > 0 ? 3 : 15);   // sleep time
-    patch_le32(buf,sz_fold,"UPX3",progid);
-    patch_le32(buf,sz_fold,"UPX2",exetype > 0 ? 0 : 0x7fffffff);
+    patch_le32(buf,sz_fold, UPXPEHEADER4,exetype > 0 ? 3 : 15);   // sleep time
+    patch_le32(buf,sz_fold, UPXPEHEADER3,progid);
+    patch_le32(buf,sz_fold, UPXPEHEADER2,exetype > 0 ? 0 : 0x7fffffff);
 
     buildLinuxLoader(
         stub_i386_bsd_elf_execve_entry, sizeof(stub_i386_bsd_elf_execve_entry),

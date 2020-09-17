@@ -79,8 +79,8 @@ PackLinuxI386sh::buildLoader(Filter const *ft)
     memcpy(buf, stub_i386_linux_elf_shell_fold, sz_fold);
 
     checkPatch(NULL, 0, 0, 0);  // reset
-    patch_le32(buf,sz_fold,"UPX3",l_shname);
-    patch_le32(buf,sz_fold,"UPX2",o_shname);
+    patch_le32(buf,sz_fold, UPXPEHEADER3,l_shname);
+    patch_le32(buf,sz_fold, UPXPEHEADER2,o_shname);
 
     // get fresh filter
     Filter fold_ft = *ft;
